@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {  
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    /* white-space: wrap; Prevent content from wrapping */
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+}   
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+}
+.logo{
+    padding: 10px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+.logo img{
+    width: 87%;
+}
+.nav-details{
+    width: 40%;
+    display: flex;
+}
+.nav-details ul{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+.nav-details ul li{
+    list-style: none;
+}
+.nav-details ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1 video {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    z-index: -99;
+    position: relative;
+    filter:brightness(60%);
+}
+.page1 h1{
+    position: absolute;
+    top: 50%;
+    color: white !important;
+    width: 80%;
+    font-size: 40PX;
+    margin-left:auto;
+    margin-right:auto;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f5f5;
+    flex-wrap: wrap;
+}
+.left{
+    width: 50%;
+    background-color: #f3f5f5;
+
+    
+}
+.left img{
+    width: 100%;
+    height: 100%;
+
+}
+.right{
+    width: 50%;
+    padding: 30px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    background-color: #f3f5f5;
+
+}
+section{
+    display: flex;
+    width: 100%;
+}
+.right .about{
+    width: 100%;
+    display: flex;
+}
+.right span{
+    float: left;
+    margin: 10px;
+    color: #6891fa;
+}
+.right h1{
+    font-size: 55px;
+    font-family:'cursive';
+
+}
+.right p{
+    color: #6891fa;
+    margin: 10px 0px;
+}
+
+
+.Investment-Criteria{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Investment-Criteria h1{
+    font-family:'cursive';
+}
+.Investment-Criteria h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.page3 h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+.tech-service{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+}
+.tech-service h2{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.tech-service section{
+margin-left: 250px;
+}
+.industrial{
+    width: 50%;
+    background-color: red;
+}
+.box{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    border: 0.5px solid black;
+    color: #4175FC;
+}
+.box i{
+    font-size: 40px;
+}
+.esg-btn{
+    width: 140px;
+    padding: 15px;
+    background-color: #4175FC;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    outline: none;
+}
+.esg-btn:hover{
+    background-color: #494B51;
+}
+.page5{
+    width: 100%;
+    position: relative;
+}
+.page5 img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.learnmore{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.footer-details{
+    width: 20%;
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    flex-direction:column;
+    /* background-color: red; */
+    color: white;
+    gap: 10px;
+}
+.footer-details img{
+    width: 250px;
+}
+.footer-details li,a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+}
+.copyright a {
+    color: #4175FC;
+}
+.copyright a:hover {
+    color: #0048ff;
+}
