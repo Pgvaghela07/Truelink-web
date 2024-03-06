@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,29 @@
 </head>
 
 <body>
-    
-    <nav>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <nav class="menu">
+      <div class="logo">
+        <img src="/images/logo/Coca-Cola-logo.png" alt="" />
+      </div>
+      <ul>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">ESG</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+      </ul>
+    </nav>
+    <nav class="nav">
         <div class="logo">
             <img src="/logo/logo.png" alt="">
         </div>
@@ -31,12 +52,6 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
-        <div class="menu-toggle">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-        </div>
-    
         <nav class="menu">
             <ul>
                 <li><a href="">Home</a></li><hr>
@@ -210,19 +225,19 @@
     </div>
     </div>
     <footer>
-        <div class="footer-details">
+        <div class="footer-details" data-aos="fade-right">
             <img src="/logo/logo.png" alt=""><br>
             <p>Truelink Capital is a Los Angeles based private equity firm with a senior, experienced founding team and
                 demonstrated ability to create long-term value</p>
         </div>
         <div class="footer-details">
             <h3>Quick Links</h3>
-            <li><a href="">About</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">ESG</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
+            <li data-aos="fade-up"><a href="">About</a></li>
+            <li data-aos="fade-up"><a href="">Team</a></li>
+            <li data-aos="fade-up"><a href="">Portfolio</a></li>
+            <li data-aos="fade-up"><a href="">ESG</a></li>
+            <li data-aos="fade-up"><a href="">News</a></li>
+            <li data-aos="fade-up"><a href="">Contact</a></li>
         </div>
         <div class="footer-details">
             <h3>Contact</h3>
@@ -237,7 +252,8 @@
         </div>
     </footer>
     <div class="copyright">
-        <p>Copyright © 2022 Truelink Capital | <a href="">Terms of Use</a> | <a href="">Privacy Notice</a></p>
+        <p>Copyright © 2022 Truelink Capital | <a href="">Terms of Use</a> | <a href="">Privacy Notice</a></p>|
+        design by <a href="https://www.instagram.com/piyush_vaghela_223/" style="text-decoration: none;"><b>Piyush vaghela</b></a> |
     </div>
     <script src="/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -248,13 +264,5 @@
             once: true,
         });
     </script>
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            this.classList.toggle('active');
-            document.querySelector('.menu').classList.toggle('active');
-        });
-
-    </script>
-</body>
 
 </html>

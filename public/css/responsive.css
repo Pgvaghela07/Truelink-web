@@ -32,12 +32,13 @@
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 640px) {
 
-    body {
-        overflow-x: hidden;
-        white-space: wrap; 
-        width: 100%;
+    .line{
+        background-color: white;
     }
-
+    .nav-details ul{
+        color: white;
+        flex-direction: column;
+    }
     .logo {
         width: 100%;
     }
