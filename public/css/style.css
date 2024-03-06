@@ -53,10 +53,13 @@ html,body{
     flex-direction: nowrap;
     text-align: center;
   }
-  
   .menu ul li {
-    padding: 20px 0;
-  }
+      padding: 20px 0;
+    }
+    .menu ul li:hover{
+        cursor: pointer;
+        color: rgb(146, 146, 146);
+      }
   
   .menu ul li a {
     color: #fff;
