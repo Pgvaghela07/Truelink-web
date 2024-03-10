@@ -206,8 +206,11 @@ section{
     font-family:'cursive';
 
 }
+.right h4 ,p{
+    font-size: 18px;
+}
 .right p{
-    color: #6891fa;
+    
     margin: 10px 0px;
 }
 
@@ -225,6 +228,9 @@ section{
 .Investment-Criteria h3{
     font-size: 20px;
     font-weight: 500;
+}
+.Investment-Criteria p{
+    font-size: 20px;
 }
 
 .page3{
